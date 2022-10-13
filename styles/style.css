@@ -36,6 +36,7 @@ header h1
 {
     color: var(--corMaisClaraAinda);
     align-self: center;
+    text-shadow: 2px 2px 2px var(--corMenosEscuraAinda);
 }
 
 header ul
@@ -85,8 +86,10 @@ section
 {
     width: 80vw;
     border: 2px solid var(--corEscura);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 10px;
+    background-color: var(--corMaisClara);
+    box-shadow: 2px 2px 10px 0.5px var(--corMenosEscura)
 }
 
 section h2 
@@ -200,7 +203,7 @@ section h3
     text-align: center;
     color: var(--corEscura);
     padding-bottom: 5px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 #contato
@@ -240,6 +243,11 @@ input, textarea, label
 .grupo-formulario label
 {
     color: var(--corEscuraaraAinda);
+}
+
+.area-texto
+{
+    max-width: 394px;
 }
 
 form button
