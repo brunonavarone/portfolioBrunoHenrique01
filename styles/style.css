@@ -1,0 +1,296 @@
+/*resetando as configuracoes do html*/
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*definicao da paleta de cores atraves de variaveis*/
+:root
+{
+    --corEscura: #3B051B;
+    --corMenosEscura: #7A0A39;
+    --corMenosEscuraAinda: #BA0F56;
+    --corClara: #E01167;
+    --corMaisClara: #faa6c9;
+    --corMaisClaraAinda: #f9cad4;
+}
+
+body
+{
+    background-color: var(--corMaisClaraAinda);
+}
+
+/*informacoes do cabecalho*/
+header
+{
+    background-color: var(--corEscura);
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1px;
+    
+}
+
+header h1
+{
+    color: var(--corMaisClaraAinda);
+    align-self: center;
+}
+
+header ul
+{
+    display: flex;
+    align-self: flex-end;
+    gap: 20px;
+}
+
+header ul li 
+{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+header ul li a 
+{
+    color: var(--corMaisClaraAinda);
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid var(--corMaisClaraAinda);
+    border-radius: 8px;
+}
+
+/*"evento" de 'quando passar o mouse por cima do elemento, faca tal coisa'*/
+header ul li a:hover
+{
+    color: var(--corEscura);
+    background-color: var(--corMaisClaraAinda);
+}
+
+/*conteudo principal do site servindo de container para a tuilizacao do flexbox*/
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-eu-chef
+{
+    max-width: 200px;
+}
+
+/*definicao do padrao das sessoes*/
+section
+{
+    width: 80vw;
+    border: 2px solid var(--corEscura);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+section h2 
+{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+section h3
+{
+    text-align: center;
+}
+
+#sobre-mim
+{
+   display: flex;
+   flex-direction: column;
+}
+
+#hobbies .container-colunas
+{
+    margin-bottom: 30px;
+}
+
+#hobbies
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-colunas
+{
+   display: flex;
+   justify-content: space-evenly;
+   
+   
+}
+
+/*definicao das colunas contendo as informacoes em texto*/
+.colunas
+{
+    display: flex;
+    flex-direction: column;
+    background: var(--corMenosEscuraAinda);
+    width: 20vw;
+    border: 3px solid var(--corEscura);
+    border-radius: 10px;
+}
+
+.colunas h3,p
+{
+    color: var(--corMaisClaraAinda);
+}
+
+.colunas p
+{
+    margin: 1vh 1vw;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.colunas h3
+{
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.doces-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.doces-container img
+{
+    max-width: 250px;
+    width: 250px;
+    border: 5px solid var(--corEscura);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.cartoes-doces h3
+{
+    text-align: center;
+    padding-bottom: 10px;
+    color: var(--corEscura);
+    padding: 5px;
+}
+
+.container-cartoes
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cartoes img
+{
+    margin-top: 10px;
+    max-width: 150px;
+    width: 150px;
+    border: 3px solid var(--corEscura);
+    border-radius: 10px;
+}
+
+.cartoes h3
+{
+    text-align: center;
+    color: var(--corEscura);
+    padding-bottom: 5px;
+    font-size: 1em;
+}
+
+#contato
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input, textarea
+{
+    border: 2px solid var(--corEscura);
+    border-radius: 3px;
+    padding: 2px;
+    display: block;
+}
+
+input, textarea, label
+{
+    margin: 0px 10px;
+}
+
+.grupo-formulario
+{
+    margin-bottom: 10px;
+    
+}
+
+.grupo-formulario label
+{
+    color: var(--corEscuraaraAinda);
+}
+
+form button
+{
+    padding: 5px 10px;
+    color: var(--corEscura);
+    background-color: var(--corMaisClara);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+
+button:hover
+{
+    color: var(--corMaisClara);
+    background-color: var(--corEscura);
+}
+
+footer
+{
+    height: 15vh;
+    background-color: var(--corMenosEscura);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p 
+{
+    color: var(--corMaisClaraAinda);
+    font-size: 0.8em;
+}
+
+.icones-footer
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.imagem-github
+{
+    max-width: 65px;
+}
+
+.imagem-instagram
+{
+    max-width: 45px;
+}
+
+.imagem-linkedin
+{
+    max-width: 50px;
+}
